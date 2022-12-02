@@ -1,3 +1,2 @@
 tekore
-numpy
-google-cloud-bigquery
+google-cloud-bigquery===2.34.4
