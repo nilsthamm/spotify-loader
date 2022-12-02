@@ -1,2 +1,3 @@
 tekore
+numpy
 google-cloud-bigquery
