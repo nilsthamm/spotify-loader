@@ -52,8 +52,9 @@ for pl in playlists:
         'album_release_date': str(t.track.album.release_date),
         'explicit': t.track.explicit,
         'popularity': t.track.popularity,
-        'preview_url': t.track.preview_url
-        } for t in tracks])
+        'preview_url': t.track.preview_url,
+        'rank': rank
+        } for rank, t in enumerate(tracks)])
 
 job = client.load_table_from_json(
     destination=f'{gcp_project_id}.{target_dataset}.raw_playlist_data', 
