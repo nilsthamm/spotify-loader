@@ -53,6 +53,7 @@ for pl in playlists:
         'explicit': t.track.explicit,
         'popularity': t.track.popularity,
         'preview_url': t.track.preview_url,
+        'year': int(pl.name[15:]),
         'rank': rank
         } for rank, t in enumerate(tracks)])
 
